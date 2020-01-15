@@ -45,6 +45,15 @@ body {
   color: white;
 }
 
+/* Make links dark */
+#dark_link {
+  color: black;
+}
+
+#dark_link:hover {
+  color: blue;
+}
+
 /* Change color on hover */
 .topnav a:hover {
   background-color: #ddd;
