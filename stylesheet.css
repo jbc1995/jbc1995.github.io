@@ -24,10 +24,42 @@ body {
   text-decoration: none;
 }
 
+/* Custom change color on hover */
+#button_red:hover {
+  background-color: #d00;
+  color: white;
+}
+
+#button_yellow:hover {
+  background-color: #dd0;
+  color: white;
+}
+
+#button_green:hover {
+  background-color: #0d0;
+  color: white;
+}
+
+#button_blue:hover {
+  background-color: #00d;
+  color: white;
+}
+
 /* Change color on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+}
+
+#portrait {
+  height: 300px;
+  width: 300px;
+}
+
+#portrait:hover {
+  content: url('images/jbc_headshot_color.jpg');
+  height: 300px;
+  width: 300px;
 }
 
 /* Style the content */
@@ -42,4 +74,32 @@ body {
   text-align: center;
   background-color: #f1f1f1;
   padding: 10px;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  background: #606060;
+  color: white;
+}
+
+/* Add a hover effect for each brand */
+.fa-envelope-square:hover {
+  background: #a31f34;
+}
+
+.fa-linkedin:hover {
+  background: #0072b1;
+}
+
+.fa-facebook:hover {
+  background: #39569c;
+}
+
+.fa-twitter:hover {
+  background: #26A7de;
 }
