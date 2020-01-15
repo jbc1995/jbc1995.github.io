@@ -51,15 +51,22 @@ body {
   color: black;
 }
 
-#portrait {
-  height: 300px;
-  width: 300px;
+/* Configuring all pictures to change when hovered over */
+.picture {
+  position: relative;
+  display: inline-block;
 }
 
-#portrait:hover {
-  content: url('images/jbc_headshot_color.jpg');
-  height: 300px;
-  width: 300px;
+.picture .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.picture:hover .img-top {
+  display: inline;
 }
 
 /* Style the content */
