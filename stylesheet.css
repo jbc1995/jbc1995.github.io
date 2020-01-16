@@ -12,6 +12,10 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 /* Style the topnav links */
@@ -22,6 +26,18 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+.main {
+  margin-top: 30px;
+}
+
+/* Style the content */
+.content {
+  margin-top: 30px;
+  text-align: center;
+  background-color: #ddd;
+  padding: 10px;
 }
 
 /* Custom change color on hover */
@@ -60,6 +76,13 @@ body {
   color: black;
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -30px;
+  visibility: hidden;
+}
+
 /* Configuring all pictures to change when hovered over */
 .picture {
   position: relative;
@@ -71,18 +94,11 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 1;
 }
 
 .picture:hover .img-top {
   display: inline;
-}
-
-/* Style the content */
-.content {
-  text-align: center;
-  background-color: #ddd;
-  padding: 10px;
 }
 
 /* Style the footer */
