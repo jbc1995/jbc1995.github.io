@@ -101,6 +101,15 @@ a.anchor {
   display: inline;
 }
 
+p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+figure {
+  display: inline-block;
+}
+
 /* Style the footer */
 .footer {
   text-align: center;
