@@ -84,6 +84,8 @@ a.anchor {
 }
 
 /* Configuring all pictures to change when hovered over */
+
+/* .picture class for pictures in general. Use as a template */
 .picture {
   position: relative;
   display: inline-block;
@@ -98,6 +100,78 @@ a.anchor {
 }
 
 .picture:hover .img-top {
+  display: inline;
+}
+
+/* .portrait class is used specifically for portrait on home page */
+.portrait {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  height: auto;
+  max-width: 100%;
+}
+
+.portrait .portrait-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 400px;
+  height: auto;
+  max-width: 100%;
+}
+
+.portrait:hover .portrait-top {
+  display: inline;
+}
+
+/* .fig_img class is used for all images used as a <figure> */
+.fig_img {
+  position: relative;
+  display: inline-block;
+  width: 252px;
+  height: auto;
+  max-width: 100%;
+}
+
+.fig_img .fig_img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 252px;
+  height: auto;
+  max-width: 100%;
+}
+
+.fig_img:hover .fig_img-top {
+  display: inline;
+}
+
+/* .header class used for all header images at tops of project pages */
+.header_img {
+  position: relative;
+  display: inline-block;
+  width: 504px;
+  height: auto;
+  max-width: 100%;
+}
+
+.header_img .header_img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 504px;
+  height: auto;
+  max-width: 100%;
+}
+
+.header_img:hover .header_img-top {
   display: inline;
 }
 
@@ -130,17 +204,17 @@ figure {
 
 /* Add a hover effect for each brand */
 .fa-envelope-square:hover {
-  background: #a31f34;
+  background: #a31f34; /* MIT Red */
 }
 
 .fa-linkedin:hover {
-  background: #0072b1;
+  background: #0072b1; /* LinkedIn Blue */
 }
 
 .fa-facebook:hover {
-  background: #39569c;
+  background: #39569c; /* Facebook Blue */
 }
 
 .fa-twitter:hover {
-  background: #26A7de;
+  background: #26A7de; /* Twitter Blue */
 }
