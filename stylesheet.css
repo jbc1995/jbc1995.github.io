@@ -175,6 +175,10 @@ a.anchor {
   display: inline;
 }
 
+video {
+  border: 3px solid black;
+}
+
 p {
   margin-left: 5%;
   margin-right: 5%;
